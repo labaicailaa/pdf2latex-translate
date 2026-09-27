@@ -4,11 +4,11 @@
 
 ## 安装
 
-把本仓库放到 TRAE 的 skills 目录下即可，入口是根目录的 `SKILL.md`。也可以只把 `assets/` 下的脚本与模板复制到翻译项目根目录使用。
+skill 位于 `pdf2latex-translate/` 文件夹，入口是其中的 `SKILL.md`。把该文件夹放进 TRAE 的 skills 目录即可；也可以只把里面的 `assets/` 脚本与模板复制到翻译项目根目录使用。
 
 ## 管线流程
 
-每章五步：
+以下命令在 `pdf2latex-translate/` 目录下执行，每章五步：
 
 1. **切章** `python assets/01_split_chapters.py [N]`
    按 PDF 书签切分，产出 `chapters/chNN/text.md`，段落间插入 `<!-- [p.NN] -->` 页标记。先不带参数跑一次可列出书签结构，确认章节边界。
@@ -27,20 +27,20 @@
 
 | 文件 | 用途 |
 | --- | --- |
-| `SKILL.md` | skill 入口，含完整流程、翻译契约要点与已踩过的坑 |
-| `assets/01_split_chapters.py` | 按书签切章，插入页标记 |
-| `assets/02_extract_figures.py` | 提取表格、统计图与要点框 |
-| `assets/03_check_chapter.py` | 单章校验并编译检测越界 |
-| `assets/04_assemble.py` | 拼装全书 `main.tex` 并编译 |
-| `assets/prompt.md` | 翻译契约模板 |
-| `assets/glossary.md` | 术语表模板 |
-| `assets/preamble.tex` | ctexbook + tcolorbox(breakable) + threeparttable 导言区 |
+| `pdf2latex-translate/SKILL.md` | skill 入口，含完整流程、翻译契约要点与已踩过的坑 |
+| `pdf2latex-translate/assets/01_split_chapters.py` | 按书签切章，插入页标记 |
+| `pdf2latex-translate/assets/02_extract_figures.py` | 提取表格、统计图与要点框 |
+| `pdf2latex-translate/assets/03_check_chapter.py` | 单章校验并编译检测越界 |
+| `pdf2latex-translate/assets/04_assemble.py` | 拼装全书 `main.tex` 并编译 |
+| `pdf2latex-translate/assets/prompt.md` | 翻译契约模板 |
+| `pdf2latex-translate/assets/glossary.md` | 术语表模板 |
+| `pdf2latex-translate/assets/preamble.tex` | ctexbook + tcolorbox(breakable) + threeparttable 导言区 |
 
 ## 使用方式
 
-把 `assets/` 下的脚本与模板复制到翻译项目根目录，按书修改脚本顶部的 PDF 路径与书名，再按上面的五步逐章执行。编译用 xelatex。
+把 `pdf2latex-translate/assets/` 下的脚本与模板复制到翻译项目根目录，按书修改脚本顶部的 PDF 路径与书名，再按上面的五步逐章执行。编译用 xelatex。
 
-翻译契约要点、易错点与更多细节见 `SKILL.md`。
+翻译契约要点、易错点与更多细节见 `pdf2latex-translate/SKILL.md`。
 
 ## License
 
