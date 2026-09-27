@@ -1,10 +1,10 @@
 # pdf2latex-translate
 
-把英文学术 PDF 教材逐章翻译成中文 LaTeX 笔记的 TRAE skill。严格逐段全译，不总结、不删减；图形裁剪为 PNG 插入，表格重制为 booktabs 三线表，要点框转为 tcolorbox。
+把英文学术 PDF 教材逐章翻译成中文 LaTeX 笔记的 skill。严格逐段全译，不总结、不删减；图形裁剪为 PNG 插入，表格重制为 booktabs 三线表，要点框转为 tcolorbox。
 
 ## 安装
 
-skill 位于 `pdf2latex-translate/` 文件夹，入口是其中的 `SKILL.md`。把该文件夹放进 TRAE 的 skills 目录即可；也可以只把里面的 `assets/` 脚本与模板复制到翻译项目根目录使用。
+skill 位于 `pdf2latex-translate/` 文件夹，入口是其中的 `SKILL.md`。把该文件夹放进你的 skills 目录即可；也可以只把里面的 `assets/` 脚本与模板复制到翻译项目根目录使用。
 
 ## 管线流程
 
