@@ -1,0 +1,15 @@
+% Shared preamble for all chapters and the assembled book
+\documentclass[11pt,a4paper]{ctexbook}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage[font=small]{caption}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\usepackage{tcolorbox}
+\tcbuselibrary{breakable}
+\newtcolorbox{insightbox}[1]{colback=blue!5, colframe=blue!60!black,
+  coltitle=white, title={#1}, fonttitle=\bfseries, breakable}
+\setlength{\parskip}{0.3em}
